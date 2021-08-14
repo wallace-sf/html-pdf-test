@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proposta comercial eletrônica</title>
+  </head>
+  <style>
+    /*
+      Global styles
+    */
+
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 297mm;
+      width: 210mm;
+      margin-left: auto;
+      margin-right: auto;
+      widows: 1;
+      orphans: 1;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      font-weight: 400;
+    }
+
+    article {
+      height: 100%;
+      padding-left: 30mm;
+      padding-right: 17.5mm;
+      padding-top: 30.5mm;
+      padding-bottom: 37.5mm;
+      background: white;
+      background-image: url("https://fieldlink-files.s3-sa-east-1.amazonaws.com/orsegups/bg.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      overflow: hidden;
+    }
+
+    article + article {
+      padding-top: 20mm;
+    }
+
+    h4 {
+      font-size: 28pt;
+    }
+
+    h2 {
+      font-size: 16pt;
+      margin-bottom: 12pt;
+      padding-bottom: 5pt;
+      border-bottom: 5pt solid #fce300;
+    }
+
+    h4,
+    h2 {
+      color: #1e398d;
+    }
+
+    p {
+      margin-bottom: 12pt;
+      text-indent: 12.5mm;
+      text-align: justify;
+      line-height: 1.5;
+      font-size: 11pt;
+    }
+
+    ul {
+      margin-bottom: 12pt;
+      text-indent: 12.5mm;
+      list-style-position: inside;
+    }
+
+    li {
+      padding-top: 5pt;
+      text-align: left;
+      line-height: 1.5;
+      font-size: 11pt;
+    }
+
+    table {
+      margin-bottom: 12pt;
+      width: 100%;
+    }
+
+    table,
+    th,
+    td {
+      border: none;
+    }
+    table thead th.description-column {
+      width: 50%;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    a:link {
+      color: #0563c1;
+      text-decoration: underline;
+    }
+
+    @media only screen {
+      html,
+      body {
+        background-color: #cccccc;
+      }
+
+      article {
+        margin-top: 5mm;
+        box-shadow: 0 0 5mm rgba(0, 0, 0, 0.5);
+      }
+
+      article:last-child {
+        margin-bottom: 5mm;
+      }
+    }
+
+    @media only print {
+      html {
+        zoom: 0.75;
+      }
+
+      html,
+      body {
+        height: 297mm;
+        width: 210mm;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @page {
+        margin: 0 !important;
+        padding: 0 !important;
+        size: A4 portrait;
+        background: white;
+      }
+    }
+
+    span.sender-info {
+      font-size: 12pt;
+    }
+
+    span.signature-line {
+      margin: auto;
+      display: inline-block;
+      text-align: center;
+      border-top: 1pt solid black;
+      width: 100%;
+    }
+
+    ul.investment-info .item {
+      text-align: justify;
+    }
+
+    ul.second-level {
+      text-indent: 0;
+      margin-left: 16.5mm;
+    }
+
+    section.signature .signature-body {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      -webkit-justify-content: flex-start;
+      -webkit-align-items: center;
+    }
+
+    section.signature .signature-body .signature-logo {
+      height: 37.58mm;
+    }
+
+    section.signature .signature-body .signature-logo img {
+      height: 100%;
+    }
+
+    section.signature .signature-footer {
+      padding-top: 7.4mm;
+    }
+
+    section.signature .signature-footer .title,
+    section.signature .signature-footer .description {
+      text-align: left;
+      margin-bottom: initial;
+      text-indent: initial;
+      line-height: 1.2;
+    }
+
+    section.signature .signature-footer .title {
+      color: #1e398d;
+      font-weight: bold;
+    }
+
+    section.signature .signature-footer .description {
+      color: #376f45;
+      font-size: 10pt;
+      font-weight: 500;
+    }
+  </style>
+  <body>
+    <article>
+      <h4>Proposta comercial</h4>
+      <br />
+      <br />
+      <span class="sender-info">A/C</span><br />
+      <span class="sender-info"> <strong>{{razao_social}}</strong> </span><br />
+      <span class="sender-info"> <strong>{{nome}}</strong> </span><br />
+      <span class="sender-info"> <strong>{{funcao}}</strong> </span><br />
+      <br />
+      <br />
+      <br />
+      <p>
+        A <strong>Orsegups</strong>, empresa genuinamente brasileira e líder
+        nacional no mercado de segurança, atua fortemente nas áreas de
+        <b>Segurança Eletrônica, Segurança Patrimonial e Facilities</b>.
+        Tecnologia de última geração, métodos inovadores e sistemas inteligentes
+        aplicados às soluções em segurança consolidam a
+        <strong>Orsegups</strong> como referência no Brasil em análise,
+        prevenção e redução de riscos.
+      </p>
+      <p>
+        Com 50 anos de mercado mantendo-se fiel às suas diretrizes
+        organizacionais e seus valores; transparência, responsabilidade social,
+        cooperação, resultado e excelência, a <strong>Orsegups</strong> se
+        solidificou e escreveu uma história de protagonismo no segmento de
+        segurança. Foi a partir de seu DNA, atuando com ética e transparência,
+        que a <strong>Orsegups</strong> conquistou certificações nacionais e
+        internacionais como Dun and Bradstreet Corporation e ISO 9001:2015, além
+        das premiações Top Of Mind e Prêmio Ímpar.
+      </p>
+      <p>
+        Sediada em São José, na Grande Florianópolis, Santa Catarina, a
+        <strong>Orsegups</strong>
+        atua no Brasil todo e conta em seu portfólio com mais de 80 mil
+        clientes. A sua equipe, altamente capacitada, é composta por mais de 5
+        mil colaboradores, distribuídos entre seus escritórios regionais e
+        unidades operacionais. Sua capacidade de atendimento está alicerçada em
+        centenas de rotas táticas de pronta resposta, presentes em diversas
+        cidades brasileiras, ratificando a melhor e maior oferta de soluções em
+        segurança para o mercado nacional.
+      </p>
+    </article>
+    <article>
+      <h2>OBJETIVO DA PROPOSTA</h2>
+      <p>
+        O objetivo desta proposta é oferecer, na modalidade de venda, os
+        equipamentos descritos neste documento bem como os serviços de
+        <strong
+          >Solução de Monitoramento de {{tipo_servico}} 24 horas {{#if
+          incluirPgo}} juntamente com a Proteção Garantida Orsegups
+          {{/if}}</strong
+        >, com a finalidade de aumentar a segurança e maximizar a performance
+        dos sistemas de segurança.
+      </p>
+      <p></p>
+      <h2>DIFERENCIAIS ORSEGUPS</h2>
+      <ul>
+        <li>Maior Central de Monitoramento 24h do País</li>
+        <li>Aplicação de Inteligência Artificial</li>
+        <li>Gestão completa via aplicativo no celular</li>
+        <li>Equipe tática treinada com técnicas da SWAT</li>
+        <li>Menor tempo de resposta comprovado</li>
+        <li>Visualização de imagens em tempo real *</li>
+        <li>Verificação do sistema por Rondas Virtuais *</li>
+        <li>Portal do Cliente nas versões WEB e APP</li>
+        <li>
+          Serviço de cobertura com vigilante sem custos nos casos de
+          arrombamento **
+        </li>
+        <li>Coberturas de até R$ 15.000,00 anuais **</li>
+      </ul>
+      <p>
+        * Serviços disponíveis nas soluções de Monitoramento Remoto de CFTV 24
+        horas.<br />
+        ** Serviço e cobertura disponível para clientes aderentes a Proteção
+        Garantida Orsegups.
+      </p>
+      <h2>PRINCIPAIS PROCEDIMENTOS DE PRONTA RESPOSTA</h2>
+      <p>
+        Dentre as diversas prontas respostas disponíveis aos clientes das
+        soluções de Monitoramento Remoto de Alarme e CFTV 24 horas
+        <strong>com deslocamento contratado</strong>, destacamos:
+      </p>
+      <ul>
+        <li>
+          <b>Disparos de alarme: </b>sempre que a Central de Monitoramento
+          Orsegups receber eventos de disparo de alarme do imóvel monitorado
+          realizará o
+          <strong>deslocamento do Agente de Inspeção Tática.</strong>
+        </li>
+        <li>
+          <b>Disparos de alarme seguido do Desarme com senha padrão: </b>sempre
+          que a Central de Monitoramento Orsegups receber um evento de disparo
+          de alarme e em seguida houver o
+          <strong>desarme do sistema</strong> utilizando-se da
+          <strong> senha padrão</strong>, haverá um contato da Orsegups com o
+          cliente através de ligação telefônica.
+        </li>
+      </ul>
+    </article>
+    <article>
+      <ul>
+        <li>
+          <b
+            >Disparos de alarme seguido do Desarme com senha padrão e posterior
+            Arme do sistema:</b
+          >
+          sempre que a Central de Monitoramento Orsegups receber um evento de
+          disparo de alarme seguido do
+          <strong>desarme do sistema</strong> utilizando-se da senha padrão e do
+          <strong>Arme do sistema</strong>, este evento será
+          <strong>descartado</strong> pois o local encontra-se novamente
+          protegido.
+        </li>
+      </ul>
+      <h2>CARACTERÍSTICAS ESPECÍFICAS</h2>
+      <p>
+        Para o pleno atendimento aos serviços ora propostos informamos abaixo os
+        itens de <strong>responsabilidade do cliente:</strong>
+      </p>
+      <ul>
+        <li>Linha Telefônica ou link de internet;</li>
+        <li>Armar e desarmar o Sistema de Alarme;</li>
+        <li>Manter cadastros de contatos e telefones atualizados.</li>
+      </ul>
+      <h2>INVESTIMENTO</h2>
+      <p>
+        Apresentamos abaixo o investimento para a <b>aquisição</b> dos
+        equipamentos desta proposta:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>COD</th>
+            <th class="description-column">DESCRIÇÃO</th>
+            <th>QTD.</th>
+            <th>R$ UNIT.</th>
+            <th>R$ TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#lista_equipamentos}}
+          <tr>
+            <td>{{codigo}}</td>
+            <td>{{produto}}</td>
+            <td>{{qtd}}</td>
+            <td>{{unit}}</td>
+            <td>{{total}}</td>
+          </tr>
+          {{/lista_equipamentos}}
+        </tbody>
+      </table>
+      <p>
+        O investimento <strong>mensal</strong> para locação e serviços de
+        <strong
+          >Solução de Monitoramento {{tipo_servico}} 24 horas juntamente com a
+          Proteção Garantida Orsegups</strong
+        >
+        e os valores de instalação/habilitação e infraestrutura:
+      </p>
+      <ul class="investment-info">
+        <li class="item">
+          <b>Monitoramento remoto 24 horas: </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ {{valor_servico}}</b>
+              <br />
+              <b>{{valor_servico_extenso}}.</b>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Instalação/Habilitação: </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ {{valor_instalacao}}</b>
+              <br />
+              <b>{{valor_instalacao_extenso}}.</b>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+    <article>
+      <ul class="investment-info">
+        <li>
+          <b>Infraestrutura: </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ {{infraestrutura}}</b>
+              <br />
+              <b>{{infraestrutura_extenso}}.</b>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        Os valores de instalação/habilitação e de infraestrutura serão pagos
+        pelo cliente diretamente para
+        <strong>{{responsavel_instalacao}}</strong> em
+        <strong>{{parcelas_instalacao}}</strong> parcelas.
+      </p>
+      <h2>VALIDADE DA PROPOSTA</h2>
+      <p>
+        Esta proposta tem validade de 30 dias a contar da data informada no
+        início deste documento.
+      </p>
+      <h2>PRAZO DE HABILITAÇÃO</h2>
+      <p>
+        O prazo previsto para a habilitação dos serviços será de até 5 dias, a
+        contar do <b>aceite formal</b> desta proposta.
+      </p>
+      <h2>PRAZO CONTRATUAL</h2>
+      <p>
+        A vigência do contrato de prestação dos serviços de monitoramento remoto
+        será de <strong>{{prazo}}</strong> meses a contar da habilitação do
+        sistema.
+      </p>
+      <p>
+        O vencimento mensal da fatura será todo dia (3) (três) do mês
+        subsequente à realização dos serviços, na rede bancária, por meio de
+        boleto bancário enviado juntamente com a nota fiscal da prestação de
+        serviços.
+      </p>
+      <h2>REAJUSTE CONTRATUAL</h2>
+      <p>
+        Os serviços e produto listados nesta proposta tem como forma de reajuste
+        o índice da Convenção Coletiva de Trabalho do sindicato dos vigilantes.
+      </p>
+      <h2>MANUTENÇÃO</h2>
+      <p>
+        Para os equipamentos fornecidos pela Orsegups, a garantia é de
+        <strong>12 meses</strong>. Durante este período a
+        <b>manutenção corretiva</b> já está inclusa no valor mensal desta
+        proposta.
+      </p>
+    </article>
+    <article>
+      <p last-page>
+        Agradecemos a oportunidade e asseguramos que não mediremos esforços para
+        que todos os objetivos expostos nesta proposta e apresentados ao longo
+        das tratativas entre você e a Orsegups– sejam atingidos fiel e
+        integralmente.
+      </p>
+      <p last-page>
+        Desde já, colocamo-nos à inteira disposição para quaisquer
+        esclarecimentos que se fizerem necessários.
+      </p>
+      <br last-page />
+      <br last-page />
+      <span last-page>{{representante_nome_completo}}</span><br last-page />
+      <span last-page>Representante Comercial Orsegups</span><br last-page />
+      <span last-page>{{representate_telefone}}</span>
+      <br last-page />
+      <br last-page />
+      <br last-page />
+      <strong last-page>Cordialmente,</strong>
+      <br last-page />
+      <br last-page />
+      <br last-page />
+      <span last-page> {{cidade}}, {{dia}} de {{mes}} de {{ano}}. </span>
+      <br last-page />
+      <br last-page />
+      <br last-page />
+      <br last-page />
+      <br last-page />
+      <br last-page />
+      <section last-page class="signature">
+        <div class="signature-body">
+          <div class="signature-logo">
+            <img
+              src="https://fieldlink-files.s3-sa-east-1.amazonaws.com/orsegups/Logo+Orsegups-2.png"
+              alt="Orsegups participações"
+            />
+          </div>
+        </div>
+        <div class="signature-footer">
+          <p class="title">Evite imprimir este e-mail.</p>
+          <p class="description">
+            Se imprimir, use o modo rascunho e utilize os dois lados da folha.
+          </p>
+          <p class="description">
+            Após o uso completo, descarte-a corretamente.
+          </p>         
+      </section>
+    </article>
+    <article></article>
+    <script>
+      // get unminifiest js in https://gist.github.com/wallace-sf/0043461a4be7b2089c1101f2bfc1a1f8
+      const bodyElement=document.getElementsByTagName("body")[0],pageHeight=bodyElement.clientHeight,footerHeight=+Number(.136026936*pageHeight).toFixed(2),articleElements=document.querySelectorAll("body > article"),state={prependChildInNextArticle:null,add:function(e){state.prependChildInNextArticle=e}};function NodeListToArray(e){return Array.prototype.slice.call(e)}function createFindMethod(){Array.prototype.find||(Array.prototype.find=function(e){if(null==this)throw new TypeError("Array.prototype.find called on null or undefined");if("function"!=typeof e)throw new TypeError("predicate must be a function");for(var t,n=Object(this),r=n.length>>>0,i=arguments[1],o=0;o<r;o++)if(t=n[o],e.call(i,t,o,n))return t})}function removeEmptyPages(e){NodeListToArray(e).forEach(function(e){0===e.childElementCount&&e.remove()})}function getChildrenShouldAppend(e,t){return NodeListToArray(e.children).filter(function(e){return!!e.hasAttribute("last-page")||e.getBoundingClientRect().bottom>t.getBoundingClientRect().bottom-footerHeight}).reverse()}function insertNewArticle(e){"article"!==e.nextElementSibling.tagName.toLowerCase()&&e.parentNode.insertBefore(document.createElement("article"),e.nextSibling)}function insertTableRows(e,t,n){const r=getChildrenShouldAppend(NodeListToArray(e.childNodes).find(function(e){return e.tagName&&"tbody"===e.tagName.toLowerCase()}),n);if(r.length){const e=document.createElement("table"),n=document.createElement("thead"),i=document.createElement("tbody"),o=document.createElement("tr"),l=document.createElement("th"),c=document.createElement("th"),d=document.createElement("th"),a=document.createElement("th");d.classList.add("description-column"),o.insertBefore(l,o.firstChild),o.insertBefore(c,o.firstChild),o.insertBefore(d,o.firstChild),o.insertBefore(a,o.firstChild),n.insertBefore(o,n.firstChild),e.insertBefore(i,e.firstChild),e.insertBefore(n,e.firstChild),t.insertBefore(e,t.firstChild),r.reverse().forEach(function(e){i.insertBefore(e,i.firstChild)})}}function manageNextArticle(e,t){if(!e)return insertNewArticle(t)}function prependChildInNextArticle(e,t,n){return"table"===e.tagName.toLowerCase()?insertTableRows(e,t,n):t.insertBefore(e,t.firstChild)}function fixPageContents(e){NodeListToArray(e).map(function(e,t,n){const r=getChildrenShouldAppend(e,e);if(r.length){manageNextArticle(n[t+1],e);const i=NodeListToArray(document.querySelectorAll("body > article"));r.forEach(function(n){prependChildInNextArticle(n,i[t+1],e)})}})}function init(){state.prependChildInNextArticle||state.add(prependChildInNextArticle),createFindMethod(),fixPageContents(articleElements),fixPageContents(document.querySelectorAll("body > article")),removeEmptyPages(document.querySelectorAll("body > article"))}bodyElement.onload=init;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proposta comercial eletrônica</title>
+  </head>
+  <style>
+    /*
+      Global styles
+    */
+
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 297mm;
+      width: 210mm;
+      margin-left: auto;
+      margin-right: auto;
+      widows: 1;
+      orphans: 1;
+    }
+
+    @page {
+      margin: 0 !important;
+      padding: 0 !important;
+      size: A4 portrait;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      font-weight: 400;
+    }
+
+    article {
+      height: 100%;
+      padding-left: 30mm;
+      padding-right: 17.5mm;
+      padding-top: 30.5mm;
+      padding-bottom: 37.5mm;
+      page-break-after: always;
+      background: white;
+      background-image: url("https://fieldlink-files.s3-sa-east-1.amazonaws.com/orsegups/bg.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    article + article {
+      padding-top: 20mm;
+    }
+
+    h4 {
+      font-size: 28pt;
+    }
+
+    h2 {
+      font-size: 16pt;
+      margin-bottom: 12pt;
+      padding-bottom: 5pt;
+      border-bottom: 5pt solid #fce300;
+    }
+
+    h4,
+    h2 {
+      color: #1e398d;
+    }
+
+    p {
+      margin-bottom: 12pt;
+      text-indent: 12.5mm;
+      text-align: justify;
+      line-height: 1.5;
+      page-break-inside: avoid;
+      font-size: 11pt;
+    }
+
+    ul {
+      margin-bottom: 12pt;
+      text-indent: 12.5mm;
+      list-style-position: inside;
+    }
+
+    li {
+      padding-top: 5pt;
+      text-align: left;
+      line-height: 1.5;
+      page-break-inside: avoid;
+      font-size: 11pt;
+    }
+
+    a:link {
+      color: #0563c1;
+      text-decoration: underline;
+    }
+
+    @media only screen {
+      html,
+      body {
+        background-color: #cccccc;
+      }
+
+      article {
+        margin-top: 5mm;
+        box-shadow: 0 0 5mm rgba(0, 0, 0, 0.5);
+      }
+
+      article:last-child {
+        margin-bottom: 5mm;
+      }
+    }
+
+    @media only print {
+      html {
+        zoom: 0.75;
+      }
+
+      html,
+      body {
+        height: 297mm;
+        width: 210mm;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @page {
+        margin: 0 !important;
+        padding: 0 !important;
+        size: A4 portrait;
+        background: white;
+      }
+    }
+
+    span.sender-info {
+      font-size: 12pt;
+    }
+
+    span.signature-line {
+      margin: auto;
+      display: inline-block;
+      text-align: center;
+      border-top: 1pt solid black;
+      width: 100%;
+    }
+
+    ul.investment-info .item {
+      text-align: justify;
+    }
+
+    ul.second-level {
+      text-indent: 0;
+      margin-left: 16.5mm;
+    }
+
+    section.signature .signature-body {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      -webkit-justify-content: flex-start;
+      -webkit-align-items: center;
+    }
+
+    section.signature .signature-body .signature-logo {
+      height: 37.58mm;
+    }
+
+    section.signature .signature-body .signature-logo img {
+      height: 100%;
+    }
+
+    section.signature .signature-footer {
+      padding-top: 7.4mm;
+    }
+
+    section.signature .signature-footer .title,
+    section.signature .signature-footer .description {
+      text-align: left;
+      margin-bottom: initial;
+      text-indent: initial;
+      line-height: 1.2;
+    }
+
+    section.signature .signature-footer .title {
+      color: #1e398d;
+      font-weight: bold;
+    }
+
+    section.signature .signature-footer .description {
+      color: #376f45;
+      font-size: 10pt;
+      font-weight: 500;
+    }
+  </style>
+  <body>
+    <article>
+      <h4>Proposta comercial</h4>
+      <br />
+      <br />
+      <span class="sender-info">A/C</span><br />
+      <span class="sender-info"> <strong></strong> </span><br />
+      <span class="sender-info"> <strong>39064197709</strong> </span><br />
+      <br />
+      <br />
+      <br />
+      <p>
+        A <strong>Orsegups</strong>, empresa genuinamente brasileira e líder
+        nacional no mercado de segurança, atua fortemente nas áreas de
+        <b>Segurança Eletrônica, Segurança Patrimonial e Facilities</b>.
+        Tecnologia de última geração, métodos inovadores e sistemas inteligentes
+        aplicados às soluções em segurança consolidam a
+        <strong>Orsegups</strong> como referência no Brasil em análise,
+        prevenção e redução de riscos.
+      </p>
+      <p>
+        Com 50 anos de mercado mantendo-se fiel às suas diretrizes
+        organizacionais e seus valores; transparência, responsabilidade social,
+        cooperação, resultado e excelência, a <strong>Orsegups</strong> se
+        solidificou e escreveu uma história de protagonismo no segmento de
+        segurança. Foi a partir de seu DNA, atuando com ética e transparência,
+        que a <strong>Orsegups</strong> conquistou certificações nacionais e
+        internacionais como Dun and Bradstreet Corporation e ISO 9001:2015, além
+        das premiações Top Of Mind e Prêmio Ímpar.
+      </p>
+      <p>
+        Sediada em São José, na Grande Florianópolis, Santa Catarina, a
+        <strong>Orsegups</strong>
+        atua no Brasil todo e conta em seu portfólio com mais de 80 mil
+        clientes. A sua equipe, altamente capacitada, é composta por mais de 6
+        mil colaboradores, distribuídos entre seus escritórios regionais e
+        unidades operacionais. Sua capacidade de atendimento está alicerçada em
+        centenas de rotas táticas de pronta resposta, presentes em diversas
+        cidades brasileiras, ratificando a melhor e maior oferta de soluções em
+        segurança para o mercado nacional.
+      </p>
+    </article>
+    <article>
+      <h2>OBJETIVO DA PROPOSTA</h2>
+      <p>
+        O objetivo desta proposta é oferecer, na modalidade de locação, os
+        equipamentos necessários para a prestação dos serviços de
+        <strong
+          >Solução de Monitoramento de alarme 24 horas </strong
+        >, com a finalidade de aumentar a segurança e maximizar a performance
+        dos sistemas de segurança.
+      </p>
+      <p></p>
+      <h2>DIFERENCIAIS ORSEGUPS</h2>
+      <ul>
+        <li>Maior Central de Monitoramento 24h do País</li>
+        <li>Aplicação de Inteligência Artificial</li>
+        <li>Gestão completa via aplicativo no celular</li>
+        <li>Equipe tática treinada com técnicas da SWAT</li>
+        <li>Menor tempo de resposta comprovado</li>
+        <li>Visualização de imagens em tempo real *</li>
+        <li>Verificação do sistema por Rondas Virtuais *</li>
+        <li>Portal do Cliente nas versões WEB e APP</li>
+        <li>
+          Serviço de cobertura com vigilante sem custos nos casos de
+          arrombamento **
+        </li>
+        <li>Coberturas de até R$ 15.000,00 anuais **</li>
+      </ul>
+      <p>
+        * Serviços disponíveis nas soluções de Monitoramento Remoto de CFTV 24
+        horas.<br />
+        ** Serviço e cobertura disponível para clientes aderentes a Proteção
+        Garantida Orsegups.
+      </p>
+      <h2>PRINCIPAIS PROCEDIMENTOS DE PRONTA RESPOSTA</h2>
+      <p>
+        Dentre as diversas prontas respostas disponíveis aos clientes das
+        soluções de Monitoramento Remoto de Alarme e CFTV 24 horas
+        <strong>com deslocamento contratado</strong>, destacamos:
+      </p>
+      <ul>
+        <li>
+          <b>Disparos de alarme: </b>sempre que a Central de Monitoramento
+          Orsegups receber eventos de disparo de alarme do imóvel monitorado
+          realizará o
+          <strong>deslocamento do Agente de Inspeção Tática.</strong>
+        </li>
+      </ul>
+    </article>
+    <article>
+      <ul>
+        <li>
+          <b>Disparos de alarme seguido do Desarme com senha padrão: </b>sempre
+          que a Central de Monitoramento Orsegups receber um evento de disparo
+          de alarme e em seguida houver o
+          <strong>desarme do sistema</strong> utilizando-se da
+          <strong> senha padrão</strong>, haverá um contato da Orsegups com o
+          cliente através de ligação telefônica.
+        </li>
+        <li>
+          <b
+            >Disparos de alarme seguido do Desarme com senha padrão e posterior
+            Arme do sistema:</b
+          >
+          sempre que a Central de Monitoramento Orsegups receber um evento de
+          disparo de alarme seguido do
+          <strong>desarme do sistema</strong> utilizando-se da senha padrão e do
+          <strong>Arme do sistema</strong>, este evento será
+          <strong>descartado</strong> pois o local encontra-se novamente
+          protegido.
+        </li>
+      </ul>
+      <h2>CARACTERÍSTICAS ESPECÍFICAS</h2>
+      <p>
+        Para o pleno atendimento aos serviços ora propostos informamos abaixo os
+        itens de <strong>responsabilidade do cliente:</strong>
+      </p>
+      <ul>
+        <li>Linha Telefônica ou link de internet;</li>
+        <li>Armar e desarmar o Sistema de Alarme;</li>
+        <li>Manter cadastros de contatos e telefones atualizados.</li>
+      </ul>
+      <h2>INVESTIMENTO</h2>
+      <p>
+        O investimento <strong>mensal</strong> para locação e serviços de
+        <strong
+          >Solução de Monitoramento alarme 24 horas juntamente com a
+          Proteção Garantida Orsegups</strong
+        >
+        e os valores de instalação/habilitação e infraestrutura:
+      </p>
+      <ul class="investment-info">
+        <li class="item">
+          <b>Monitoramento remoto 24 horas: </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ 199.90</b>
+              <br />
+              <b>cento e noventa e nove reais e noventa centavos.</b>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Instalação/Habilitação: </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ 22.25</b>
+              <br />
+              <b>vinte e dois reais e vinte e cinco centavos.</b>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Infraestrutura: </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ 1000</b>
+              <br />
+              <b>mil reais.</b>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+    <article>
+      <ul class="investiment-info">
+        <li>
+          <b>Valor mensal de Locação: </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ 186.64999999999998</b>
+              <br />
+              <b>cento e oitenta e seis reais e sessenta e quatro trilhões, novecentos e noventa e nove bilhões, novecentos e noventa e nove milhões, novecentos e noventa e nove mil novecentos e noventa e oito centavos.</b>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Valor mensal do Serviço de Monitoramento: </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ 199.90</b>
+              <br />
+              <b>cento e noventa e nove reais e noventa centavos.</b>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Valor mensal do PGO (se houver): </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ R$ 33,90</b>
+              <br />
+              <b>trinta e três reais e noventa centavos.</b>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Valor mensal da Mão de obra (se houver): </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ 22.25</b>
+              <br />
+              <b>vinte e dois reais e vinte e cinco centavos.</b>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Valor TOTAL mensal: </b>
+          <ul class="second-level">
+            <li>
+              <b>R$ 408.80</b>
+              <br />
+              <b>quatrocentos e oito reais e oito centavos.</b>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        Os valores de instalação/habilitação e de infraestrutura serão pagos
+        pelo cliente diretamente para
+        <strong>Diretamente ao Instalador</strong> em
+        <strong>1</strong> parcela(s) de R$ NaN.
+      </p>
+      <h2>VALIDADE DA PROPOSTA</h2>
+      <p>
+        Esta proposta tem validade de 30 dias a contar da data informada no
+        início deste documento.
+      </p>
+      <h2>PRAZO DE HABILITAÇÃO</h2>
+      <p>
+        O prazo previsto para a habilitação dos serviços será de até 5 dias, a
+        contar do <b>aceite formal</b> desta proposta.
+      </p>
+    </article>
+    <article>
+      <h2>PRAZO CONTRATUAL</h2>
+      <p>
+        A vigência do contrato de prestação dos serviços de monitoramento remoto
+        será de <strong>36</strong> meses a contar da habilitação do
+        sistema.
+      </p>
+      <p>
+        O vencimento mensal da fatura será todo dia (3) (três) do mês
+        subsequente à realização dos serviços, na rede bancária, por meio de
+        boleto bancário enviado juntamente com a nota fiscal da prestação de
+        serviços.
+      </p>
+      <h2>REAJUSTE CONTRATUAL</h2>
+      <p>
+        O reajuste do contrato acontecerá todo mês de fevereiro de cada ano e
+        terá como base o dissídio coletivo da categoria de vigilantes.
+      </p>
+      <h2>MANUTENÇÃO</h2>
+      <p>
+        Para os equipamentos fornecidos pela Orsegups, na modalidade de locação,
+        a <b>manutenção corretiva</b> já está inclusa no valor mensal desta
+        proposta.
+      </p>
+    </article>
+    <article>
+      <p>
+        Agradecemos a oportunidade e asseguramos que não mediremos esforços para
+        que todos os objetivos expostos nesta proposta e apresentados ao longo
+        das tratativas entre você e a Orsegups– sejam atingidos fiel e
+        integralmente.
+      </p>
+      <p>
+        Desde já, colocamo-nos à inteira disposição para quaisquer
+        esclarecimentos que se fizerem necessários.
+      </p>
+      <br />
+      <br />
+      <br />
+      <strong>Cordialmente,</strong>
+      <br />
+      <br />
+      <br />
+      <span> São José, 13 de Agosto de 2021. </span>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <span>Bruno Botelho</span><br />
+      <span>Representante Comercial Orsegups</span><br />
+      <span></span><br>
+      <span>bruno.botelho@orsegups.com.br</span>
+      <br />
+      <br />
+      <section class="signature">
+        <div class="signature-body">
+          <div class="signature-logo">
+            <img
+              src="https://fieldlink-files.s3-sa-east-1.amazonaws.com/orsegups/Logo+Orsegups-2.png"
+              alt="Orsegups participações"
+            />
+          </div>
+        </div>
+        <div class="signature-footer">
+          <p class="title">Evite imprimir este e-mail.</p>
+          <p class="description">
+            Se imprimir, use o modo rascunho e utilize os dois lados da folha.
+          </p>
+          <p class="description">
+            Após o uso completo, descarte-a corretamente.
+          </p>
+        </div>
+      </section>
+    </article>
+  </body>
+</html>
